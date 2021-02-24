@@ -15,6 +15,10 @@ class App extends Component {
         <Test
           question="Why does Waldo wear stripes?" punchline="Because he doesn’t want to be spotted.." 
         />
+        <Test
+           punchline="Hello I am blah blah.." 
+        />
+
       </div>
     )
   }
