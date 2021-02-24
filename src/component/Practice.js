@@ -1,20 +1,25 @@
 import React, { Component } from 'react'
 
 class Practice extends Component {
-    constructor(props) {
-        super(props)
+    constructor() {
+        super()
     
         this.state = {
-             name: "Sabina Bhattarai",
-             age:"25"
+             isLoggedIn: false
         }
     }
     
     render() {
+        let wordDisplay
+        if(this.state.isLoggedIn === true){
+            wordDisplay = "in"
+        } else{
+            wordDisplay ="out"
+        }
         return (
             <div>
-                <h1>{this.state.name}</h1>
-                <h1>{this.state.age}</h1>
+                <h1> You are currently {wordDisplay}</h1>
+               
             </div>
         )
     }
