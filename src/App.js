@@ -7,10 +7,10 @@ class App extends Component {
     return (
       <div className="todo-list">
         <Practice />
-        {/* <TodoItem />
         <TodoItem />
         <TodoItem />
-        <TodoItem /> */}
+        <TodoItem />
+        <TodoItem />
       </div>
     )
   }
