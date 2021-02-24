@@ -18,7 +18,7 @@ class Practice extends Component {
         }
         return (
             <div>
-                <h1> You are currently {wordDisplay}</h1>
+                <h1> You are currently logged {wordDisplay}</h1>
                
             </div>
         )
