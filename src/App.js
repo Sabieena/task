@@ -4,14 +4,17 @@ import Practice from './component/Practice'
 import Test from './component/Test'
 import products from './component/ProductData'
 import Product from './component/Product'
+import Form from './component/Form'
 
-
-function App() {
-  const productComponents = products.map(items => <Product key={items.id} product={items} />)
+class App extends Component {
   
+  render() {
+    // const productComponents = products.map(items => <Product key={items.id} product={items} />)
+
     return (
       <div className="todo-list">
-        {productComponents}
+        <Form />
+        {/* {productComponents} */}
         {/* <Practice />
         <TodoItem />
         <TodoItem />
@@ -25,10 +28,11 @@ function App() {
         /> */}
 
         
-
+  
       </div>
     )
-  
+  }
 }
 
 export default App
+
